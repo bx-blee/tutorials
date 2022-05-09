@@ -1,0 +1,5 @@
+#+TITLE: Readme
+
+* cp persian.el to lisp/language
+* cp TUTORIAL.fa to etc/tutorials
+* Add (load "language/persian") to lisp/loadup.el
