@@ -3,3 +3,9 @@
 * cp persian.el to lisp/language
 * cp TUTORIAL.fa to etc/tutorials
 * Add (load "language/persian") to lisp/loadup.el
+
+* Fix typo in lisp/language/misc-lang.el s/ZWMJ/ZWNJ/
+* Suggestions for lisp/language/misc-lang.el
+** In the first line of doc string spell out Zero Width Non-joiner
+** Position the Arabic comment box propeerly -- not on top of coding system
+** Question, why are Aparabic and Persian in Misc. Because they did not have a tutorial?

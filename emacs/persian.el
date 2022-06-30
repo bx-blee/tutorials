@@ -22,7 +22,7 @@
 
 ;;; Commentary:
 
-;; Standard coding system. NOTYET (load "language/persian") needs to be added to lisp/loadup.el
+;; Standard coding system.
 
 ;;; Code:
 
