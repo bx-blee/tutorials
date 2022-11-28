@@ -1,11 +1,36 @@
 #+TITLE: Readme
 
-* cp persian.el to lisp/language
-* cp TUTORIAL.fa to etc/tutorials
-* Add (load "language/persian") to lisp/loadup.el
+* Adding Persian Tutorial To Emacs-29
 
-* Fix typo in lisp/language/misc-lang.el s/ZWMJ/ZWNJ/
-* Suggestions for lisp/language/misc-lang.el
-** In the first line of doc string spell out Zero Width Non-joiner
-** Position the Arabic comment box propeerly -- not on top of coding system
-** Question, why are Aparabic and Persian in Misc. Because they did not have a tutorial?
+#+begin_src sh
+cp ${tutorialsBase}/persian.el ${emacsDir}/lisp/language/persian.el
+cp ${tutorialsBase}/TUTORIAL.fa ${emacsDir}/etc/tutorials/TUTORIAL.fa
+#+end_src
+
+Then add  (load "language/persian") to lisp/loadup.el
+
+And then build the sources
+
+In bisos, we have added this function to "/bisos/core/bsip/bin/lcaEmacsSrcBinsPrep.sh"
+
+#+begin_src sh
+
+local emacsDir="/bisos/var/srcPkgs/emacs-29/emacs/"
+
+# https://github.com/bx-blee/tutorials
+local tutorialsBase="/bisos/git/bxRepos/blee/tutorials/emacs"
+
+    function tutorialPersianAdd {
+       lpDo cp ${tutorialsBase}/persian.el ${emacsDir}/lisp/language/persian.el
+       lpDo cp ${tutorialsBase}/TUTORIAL.fa ${emacsDir}/etc/tutorials/TUTORIAL.fa
+       lpDo cp ${tutorialsBase}/loadup.el ${emacsDir}/lisp/loadup.el
+    }
+
+#+end_src
+
+* Minor Related Suggestions
+** Fix typo in lisp/language/misc-lang.el s/ZWMJ/ZWNJ/
+** Suggestions for lisp/language/misc-lang.el
+*** In the first line of doc string spell out Zero Width Non-joiner
+*** Position the Arabic comment box propeerly -- not on top of coding system
+*** Question: why are Arabic and Persian in Misc? Is it because they do not have a tutorial?
