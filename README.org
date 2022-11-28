@@ -1,4 +1,4 @@
-#+title: Farsi Translations Of Emacs Tutorials
+#+title: Farsi Translation Of Emacs Tutorials
 
 * General
 
