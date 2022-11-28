@@ -1,4 +1,4 @@
-#+TITLE: Readme
+#+TITLE: README.org
 
 * Adding Persian Tutorial To Emacs-29
 
@@ -9,7 +9,7 @@ cp ${tutorialsBase}/TUTORIAL.fa ${emacsDir}/etc/tutorials/TUTORIAL.fa
 
 Then add  (load "language/persian") to lisp/loadup.el
 
-And then build the sources
+And then build the sources:
 
 In bisos, we have added this function to "/bisos/core/bsip/bin/lcaEmacsSrcBinsPrep.sh"
 

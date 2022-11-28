@@ -1,25 +1,37 @@
-#+title: Home Of Farsi And Arabic Translations Of Emacs Tutorials
+#+title: Farsi Translations Of Emacs Tutorials
 
 * General
 
-** The English origignal text is a symlink as:
+The English origignal text is a symlink as:
+
+#+begin_src sh
 ln -s /usr/local/share/emacs/27.1.50/etc/tutorials/TUTORIAL emacs/TUTORIAL
-** The Hebrew version is a  symlink as:
+#+end_src
+
+The Hebrew version is a  symlink as:
+
+#+begin_src sh
 ln -s /usr/local/share/emacs/27.1.50/etc/tutorials/TUTORIAL.he emacs/TUTORIAL.he
-It is being refered to as for consistency of right-to-left languages
+#+end_src
+
+TUTORIAL.he is being refered to for consistency of right-to-left languages
 
 * Farsi Translation
 
-** We started with a machine translation of the /etc/tutorials/TUTORIAL
+- We started with a machine translation of the /etc/tutorials/TUTORIAL
 
-** That was then fixed up based on /etc/tutorials/TUTORIAL.he right-to-left markings.
+- That was then fixed up based on /etc/tutorials/TUTORIAL.he right-to-left markings.
 
-** The translated text was reviewed and improved by many for clarity and ease of reading.
+- The translated text was reviewed, improved and re-written for clarity and ease of reading.
 
 * Arabic Translation
 
-** We started with a machine translation of the /etc/tutorials/TUTORIAL
+- We started with a machine translation of the /etc/tutorials/TUTORIAL
 
-** That was then fixed up based on /etc/tutorials/TUTORIAL.he right-to-left markings.
+- That was then fixed up based on /etc/tutorials/TUTORIAL.he right-to-left markings.
 
-** TODO the translated text needs to be reviewed by many for clarity and ease of reading.
+- TODO the translated text needs to be reviewed by many for clarity and ease of reading.
+
+* Build Instructions
+
+ See ./emacs/README.org
