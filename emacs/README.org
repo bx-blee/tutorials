@@ -9,9 +9,9 @@ cp ${tutorialsBase}/TUTORIAL.fa ${emacsDir}/etc/tutorials/TUTORIAL.fa
 
 Then add  (load "language/persian") to lisp/loadup.el
 
-And then build the sources:
+And then build the sources.
 
-In bisos, we have added this function to "/bisos/core/bsip/bin/lcaEmacsSrcBinsPrep.sh"
+In BISOS, we have added this function to "/bisos/core/bsip/bin/lcaEmacsSrcBinsPrep.sh"
 
 #+begin_src sh
 
@@ -23,6 +23,8 @@ local tutorialsBase="/bisos/git/bxRepos/blee/tutorials/emacs"
     function tutorialPersianAdd {
        lpDo cp ${tutorialsBase}/persian.el ${emacsDir}/lisp/language/persian.el
        lpDo cp ${tutorialsBase}/TUTORIAL.fa ${emacsDir}/etc/tutorials/TUTORIAL.fa
+       # Make sure ${tutorialsBase}/loadup.el is up-to-date
+       # diff ${tutorialsBase}/loadup.el ${emacsDir}/lisp/loadup.el ## should only be (load "language/persian")
        lpDo cp ${tutorialsBase}/loadup.el ${emacsDir}/lisp/loadup.el
     }
 
