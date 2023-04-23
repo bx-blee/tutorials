@@ -5,13 +5,13 @@
 The English origignal text is a symlink as:
 
 #+begin_src sh
-ln -s /usr/local/share/emacs/27.1.50/etc/tutorials/TUTORIAL emacs/TUTORIAL
+ln -s /usr/local/share/emacs/29/etc/tutorials/TUTORIAL emacs/TUTORIAL
 #+end_src
 
 The Hebrew version is a  symlink as:
 
 #+begin_src sh
-ln -s /usr/local/share/emacs/27.1.50/etc/tutorials/TUTORIAL.he emacs/TUTORIAL.he
+ln -s /usr/local/share/emacs/29/etc/tutorials/TUTORIAL.he emacs/TUTORIAL.he
 #+end_src
 
 TUTORIAL.he is being refered to for consistency of right-to-left languages
@@ -20,9 +20,9 @@ TUTORIAL.he is being refered to for consistency of right-to-left languages
 
 - We started with a machine translation of the /etc/tutorials/TUTORIAL
 
-- That was then fixed up based on /etc/tutorials/TUTORIAL.he right-to-left markings.
+- That was then fixed up based on /etc/tutorials/TUTORIAL.he for right-to-left markings.
 
-- The translated text was reviewed, improved and re-written for clarity and ease of reading.
+- The translated text re-written for clarity and ease of reading.
 
 * Arabic Translation
 

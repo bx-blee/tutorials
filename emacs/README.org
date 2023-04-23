@@ -34,5 +34,5 @@ local tutorialsBase="/bisos/git/bxRepos/blee/tutorials/emacs"
 - Fix typo in lisp/language/misc-lang.el s/ZWMJ/ZWNJ/
 - Suggestions for lisp/language/misc-lang.el
    - In the first line of doc string spell out Zero Width Non-joiner
-   - Position the Arabic comment box propeerly -- not on top of coding system
+   - Position the Arabic comment box properly -- not on top of coding system
    - Question: why are Arabic and Persian in Misc? Is it because they do not have a tutorial?
